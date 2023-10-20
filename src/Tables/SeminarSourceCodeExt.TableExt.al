@@ -4,7 +4,7 @@ tableextension 51201 "Seminar Extension" extends "Source Code Setup"
     {
         field(51200; Seminar; Code[10])
         {
-            DataClassification = ToBeClassified;
+            Caption = 'Seminar';
         }
     }
 
