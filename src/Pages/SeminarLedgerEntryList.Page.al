@@ -124,7 +124,6 @@ page 51200 "Seminar Ledger Entries"
             systempart(Notes; Notes)
             {
             }
-            
         }
     }
 
