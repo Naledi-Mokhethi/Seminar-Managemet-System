@@ -80,7 +80,7 @@ page 51213 "Posted Seminar Reg. List"
 
     actions
     {
-        area(navigation)
+        area(Navigation)
         {
             group("Seminar Registration")
             {

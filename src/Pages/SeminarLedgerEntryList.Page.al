@@ -126,12 +126,28 @@ page 51200 "Seminar Ledger Entries"
             }
         }
     }
-
     actions
     {
+        area(Navigation)
+        {
+            action(Navigate)
+            {
+                ApplicationArea = All;
+                Caption = 'Find entries...';
+                Image = Navigate;
+                Scope = Repeater;
+                ShortcutKey = 'Ctrl+Alt+Q';
+                ToolTip = 'Find entries and documents that exist for the selected document. (Formerly known as Navigate)';
 
+                trigger OnAction()
+                begin
+                    NavigatePage.SetDoc(Rec."Posting Date", rec."Document No.");
+                    NavigatePage.Run();
+                end;
+            }
+        }
     }
 
     var
-        myInt: Integer;
+        NavigatePage: Page Navigate;
 }

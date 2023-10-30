@@ -186,7 +186,7 @@ page 51212 "Posted Seminar Registration"
                     RunPageLink = "No." = FIELD("No.");
                     RunPageView = WHERE("Document Type" = CONST("Posted Seminar Registration"));
                     ApplicationArea = All;
-                    ToolTip = 'Demo Code';
+                    ToolTip = 'Comments';
                 }
                 action("Charges")
                 {
@@ -195,10 +195,37 @@ page 51212 "Posted Seminar Registration"
                     RunObject = Page "Posted Seminar Charges";
                     RunPageLink = "Document No." = FIELD("No.");
                     ApplicationArea = All;
-                    ToolTip = 'Demo Code';
+                    ToolTip = 'Comments';
                 }
+                action("Navigate")
+                {
+                    Caption = '&Find Entries';
+                    Image = Navigate;
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    ToolTip = 'Find Emteries and documents that exist in the selected document';
+
+                    trigger OnAction()
+                    begin
+                        Navigate.SetDoc(Rec."Posting Date", rec."No.");
+                        Navigate.Run();
+                    end;
+                }
+
             }
+
         }
+        //  area(Promoted)
+        // {
+        //     group(Category_Process)
+        //     {
+        //         actionref(Navigate_Promoted; Navigate)
+        //         {
+        //         }
+        //     }
+        // }
     }
+    var
+        Navigate: Page Navigate;
 }
 
