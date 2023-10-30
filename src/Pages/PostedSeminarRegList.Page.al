@@ -6,7 +6,7 @@ page 51213 "Posted Seminar Reg. List"
 {
 
 
-    Caption = 'Seminar Registration List';
+    Caption = 'Posted Seminar Registration List';
     CardPageID = "Posted Seminar Registration";
     Editable = false;
     PageType = List;
