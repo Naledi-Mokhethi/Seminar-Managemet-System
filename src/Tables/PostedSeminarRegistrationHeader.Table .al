@@ -2,6 +2,8 @@
 table 51209 "Posted Seminar Reg. Header"
 {
     Caption = 'Posted Seminar Reg. Header';
+    LookupPageId = "Posted Seminar Reg. List";
+    DrillDownPageId = "Posted Seminar Reg. List";
 
     fields
     {

@@ -1,10 +1,13 @@
 // CSD1.00 - 2023-10-18 - B. During
-//   Chapter 4 - Lab 1
+//   Chapter 4 - Lab 1 
+//   Continues on chapter 5
 //     - Created new table
 
 table 51201 "Seminar Ledger Entry"
 {
     Caption = 'Seminar Ledger Entry';
+    LookupPageId = "Seminar Ledger Entries";
+    DrillDownPageId = "Seminar Ledger Entries";
 
     fields
     {
