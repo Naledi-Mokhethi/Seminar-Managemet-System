@@ -146,12 +146,15 @@ table 51201 "Seminar Ledger Entry"
         {
             Clustered = true;
         }
+        key("Key2"; "Document No.", "Posting Date")
+        {
+
+        }
     }
 
     fieldgroups
     {
     }
-    var
-        UserMgt: Codeunit "User Management";
+
 }
 
