@@ -142,7 +142,7 @@ table 51209 "Posted Seminar Reg. Header"
             TableRelation = "No. Series";
 
         }
-        field(28; "User"; Code[20])
+        field(28; "User ID"; Code[20])
         {
             Caption = 'User ID';
             TableRelation = User."User Name";
