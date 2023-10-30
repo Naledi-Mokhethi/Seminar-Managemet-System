@@ -13,7 +13,7 @@ codeunit 51201 "Seminar Jnl.-Post Line"
         SeminarJnlCheckLine: Codeunit "Seminar Jnl.-Check Line";
         NextEntryNo: Integer;
 
-    local procedure RunWithCheck(var SeminarJnlLine2: Record "Seminar Journal Line")
+    procedure RunWithCheck(var SeminarJnlLine2: Record "Seminar Journal Line")
     begin
         SemianrJnlLine.Copy(SeminarJnlLine2);
         Code();
