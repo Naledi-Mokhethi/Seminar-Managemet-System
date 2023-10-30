@@ -145,6 +145,19 @@ page 51209 "Seminar Registration"
                     RunPageLink = "No." = FIELD("No.");
                 }
             }
+            group(Posting)
+            {
+                Caption = 'Posting';
+                action("Post")
+                {
+                    Caption = 'Post';
+                    Image = PostDocument;
+                    Promoted = true;
+                    PromotedCategory = Process;
+                    RunObject = Codeunit "Seminar-Post (Yes/No)";
+                    ShortCutKey = 'F9';
+                }
+            }
         }
     }
 }
